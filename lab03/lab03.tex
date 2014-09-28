@@ -53,7 +53,8 @@ A equação
 $$ L = \dfrac{1}{2f} \sqrt{\dfrac{mg}{\mu}} n $$
 Pode ser reescrita como
 $$ L = (\dfrac{1}{2f} \sqrt{\dfrac{g}{\mu}}) \cdot n\sqrt{m} $$
-Vemos então que deve existir uma uma relação linear entre $L$ e $n\sqrt{m}$ em que o coeficiente angular é $a = \dfrac{1}{2f} \sqrt{\dfrac{g}{\mu}}$ e o coeficiente linear é $b = 0$, que pode ser verificada utilizando-se a tabela abaixo:
+$$ n \sqrt{m} = 2f\sqrt{\frac{\mu}{g}} \cdot L $$
+Vemos então que deve existir uma uma relação linear entre $L$ e $n\sqrt{m}$ em que o coeficiente angular é $a = 2f \sqrt{\dfrac{\mu}{g}}$ e o coeficiente linear é $b = 0$, que pode ser verificada utilizando-se a tabela abaixo:
 
 \begin{table}[!htbp]
 \centering
@@ -97,8 +98,8 @@ $1.365\pm0.001$ & $6$ & $0.0718\pm0.0001$ & $0.2680\pm0.0002$ & $1.608\pm0.001$ 
 
 \subsection{Regressão linear}
 Fazendo-se a regressão linear $n\sqrt{m}$ por $L$ obtem-se os coeficientes:
-$$a = 1.3985 \pm 0.0007 \dfrac{m}{\sqrt{Kg}}$$
-$$b = -0.196 \pm 0.001 m$$
+$$a = 1.3985 \pm 0.0007 \dfrac{\sqrt{Kg}}{m}$$
+$$b = -0.196 \pm 0.001 \sqrt{Kg}$$
 Sendo $a$ o coeficiente angular e $b$ o coeficiente linear.
 Nota-se que segundo a linearização da equação original, o coeficiente linear deveria ser nulo, o que não condiz com a regressão linear dos dados experimentais. Isso se deve a erros aleatórios e erros durante as medições.
 A sobreposição da reta obtida sobre os pontos da tabela pode ser vista no gráfico abaixo:
@@ -112,17 +113,21 @@ A sobreposição da reta obtida sobre os pontos da tabela pode ser vista no grá
 \subsection{Densidade linear do fio}
 A densidade linear do fio é a relação entre o comprimento ($L$) do fio e sua massa ($M_f$), representado por $\mu = \dfrac{M_f}{L}$.\\\\
 A representação física do coeficiente linear ($a$) é:
-$$a = \dfrac{1}{2f} \sqrt{\dfrac{g}{\mu}}$$
+$$a = 2f \sqrt{\dfrac{\mu}{g}}$$
 Isolando $\mu$ obtemos:
-$$ \mu = \dfrac{g}{4a^2f^2} $$
+$$ \mu = \dfrac{ga^2}{4f^2} $$
 Considerando o valor da aceleração da gravidade 
-$$g = 9.8 \dfrac{m}{s^2} $$
-O valor da densidade linear é:
-$$ \mu = 0.0000259 \dfrac{Kg}{m}$$
+$$g = 9.8 \; m/s^2 $$
+Podemos calcular o valor da densidade linear como:
+$$ \mu = 3.327 \cdot 10^{-4} \; Kg/m$$
 O erro de $\mu$ é dado por:
-$$ \Delta \mu = \dfrac{g}{2f^2a^3} \Delta a $$
+$$ \Delta \mu = \dfrac{ga}{2f^2} \cdot \Delta a$$
 E fazendo-se as devidas substituições chega-se ao valor de:
-$$\Delta \mu = 0.0000003 \dfrac{Kg}{m}$$
+$$\Delta \mu = 3 \cdot 10^{-7} \; Kg/m$$
+
+Assim, o valor encontrado experimentalmente não está de acordo com o valor conhecido da densidade linear do fio, de $2.340 \cdot 10^{-4} Kg/m$.
+
+% Migués %
 
 \section{Conclusões}
 
