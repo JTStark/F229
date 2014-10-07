@@ -54,10 +54,47 @@ O experimento realizado teve como objetivo estudar a máquina de Atwood, utiliza
 
 
 \section{Análise dos Resultados e Discussões}
-\subsection{Linearização}
-
-
 \subsection{Regressão linear}
+Pela equação 
+
+$$\Delta m = \frac{2h}{gR^2} \cdot (I + MR^2)\dfrac{1}{t^2}  + \frac{\tau _a} {gR}$$
+Onde $\Delta m = m_1 - m_2$, $ M = m_1 + m_2 $, $h$ é a altura inicial, $t$ é o tempo em que os corpos se deslocam de $h$, $I$ é o momento de inércia do cilindro de latão, $R$ é o seu raio.\\
+Vemos que existe uma relação linear entre $\Delta m$ e $ \dfrac{1}{t^2}$. Para explorar essa relação, foi construída a Tabela \ref{linear}, relacionando $\Delta m$ à $ \dfrac{1}{t^2} $ .
+
+\begin{table}[!htbp]
+\centering
+\def\arraystretch{1.5}
+\caption{A diferença de massa, relacionada à grandeza $1/t^2$.}
+\begin{tabular}{|c|c|c|}
+\hline 
+$\Delta m \; (g)$ & $t \; (s)$ & $1/t^2 \; (s^{-2})$ \\ 
+\hline 
+$37.0 \pm 0.1$ & $4.24 \pm 0.03 $ & $0.055 \pm 0.001 $  \\
+\hline
+$29.2 \pm 0.1$ & $4.51 \pm 0.05 $ & $0.049 \pm 0.001$ \\
+\hline
+$10.2 \pm 0.1$ & $8.34 \pm 0.05 $ & $0.0143 \pm 0.0002$\\
+\hline
+$10.4 \pm 0.1$ & $8.60 \pm 0.09 $ & $ 0.0135 \pm 0.0003 $\\
+\hline
+$9.8 \pm 0.1$ & $8.51 \pm 0.01 $ & $ 0.01379 \pm 0.0002 $\\
+\hline
+$13.6 \pm 0.1$ & $7.26 \pm 0.03 $ & $ 0.0189 \pm 0.0003 $ \\
+\hline
+\end{tabular} 
+\label{linear}
+\end{table}
+Fazendo a regressão linear de $ \Delta m$ X $ \dfrac{1}{t^2} $, pelo método de mínimos quadrados, obtem-se os seguintes coeficientes: 
+	$$ a = 0.00138 \pm 0.00005 $$
+	$$ b = 0.0002 \pm 0.0005 $$
+
+A reta resultante da regressão linear, sobreposta aos pontos medidos experimentalmente pode ser vista na Figura \ref{grafico}. Nota-se que o experimento falhou em coletar dados distribuidos uniformemente sobre o eixo $ \Delta m$, e isso pode acarretar erros e incertezas.
+
+\begin{figure}
+\includegraphics[scale=0.55]{grafico.png}
+\caption{Regressão linear de $\Delta m$ por $1/t^2$ sobreposta aos pontos experimentais}
+\label{grafico}
+\end{figure}
 
 \subsection{Significado do coeficiente angular}
 
