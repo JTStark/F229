@@ -25,7 +25,7 @@
 \newpage
 \section{Resumo}
 Inicialmente, prendeu-se um fio (inextensível) com duas massas nas extremidades em uma polia em torno de um eixo fixo (Máquina de Atwood). Após variar a diferença entre as massas das extremidades dos pesos dos fios (com discos de metal de massas variadas) e obter os períodos de queda de da massa de maior peso com um cronômetro, foi utilizada a fórmula $\Delta m = (\dfrac{2h}{gR^2})(I + MR^2)\dfrac{1}{t^2}+(\dfrac{tau_a}{gR})$ para determinar o momento de inércia da polia e o torque do atrito.
-Após a transformação linear da equação em $X$, traçou-se um gráfico de $\Delta m$ por $1/t^2$. A partir desses dados e das dimensões do cilindro (calculadas com um paquímetro), foi possível a determinação do momento de inércia aproximado e do torque realizado pela força de atrito na polia.
+Após a transformação linear da equação, traçou-se um gráfico de $\Delta m$ por $1/t^2$. A partir desses dados e das dimensões do cilindro (calculadas com um paquímetro), foi possível a determinação do momento de inércia aproximado e do torque realizado pela força de atrito na polia.
 % Não me lembro das fórmulas e dos eixos do gráfico, sei q sou várzea, mas me ajudem ;) hahahaha
 
 \section{Objetivos}
@@ -36,7 +36,7 @@ O experimento realizado teve como objetivo estudar a máquina de Atwood, utiliza
 
 
 \subsection{Procedimento}
-A montagem do experimento da Máquina de Atwood consiste em dois pesos de suspensão ligados por um fio leve e inextensível (foi utilizado um pedaço de barabante), que passa por uma polia, um cilindro (no caso, um de latão de raio $R$, medido com o paquímetro, e momento de inércia $I$), como mostra a figura 1. \\
+A montagem do experimento da Máquina de Atwood consiste em dois pesos de suspensão ligados por um fio leve e inextensível (foi utilizado um pedaço de barbante), que passa por uma polia, um cilindro (no caso, um de latão com raio $R$, medido com o paquímetro, e momento de inércia $I$), como mostra a figura 1. \\
 
 \newpage
 
@@ -111,11 +111,11 @@ Isso tudo, para $h = (115.00 \pm 0.05) \; cm, \; M = (1829,0 \pm 0.3) \; g \;$ $
 
 \section{Análise dos Resultados e Discussões}
 \subsection{Regressão linear}
-Pela equação 
+Tem-se a equação: 
 
-$$\Delta m = \frac{2h}{gR^2} \cdot (I + MR^2)\dfrac{1}{t^2}  + \frac{\tau _a} {gR}$$
-Onde $\Delta m = m_1 - m_2$, $ M = m_1 + m_2 $, $h$ é a altura inicial, $t$ é o tempo em que os corpos se deslocam de $h$, $I$ é o momento de inércia do cilindro de latão, $R$ é o seu raio.\\
-Vemos que existe uma relação linear entre $\Delta m$ e $ \dfrac{1}{t^2}$. Para explorar essa relação, foi construída a Tabela \ref{linear}, relacionando $\Delta m$ à $ \dfrac{1}{t^2} $ .
+$$\Delta m = \frac{2h}{gR^2} (I + MR^2)\cdot\dfrac{1}{t^2}  + \frac{\tau _a} {gR},$$
+onde $\Delta m = m_1 - m_2$, $ M = m_1 + m_2 $, $h$ é a altura inicial, $t$ é o tempo em que os corpos se deslocam de $h$, $I$ é o momento de inércia do cilindro de latão, $R$ é o seu raio.\\
+Nela vemos que existe uma relação linear entre $\Delta m$ e $ \dfrac{1}{t^2}$. Para explorar essa relação, foi construída a Tabela \ref{linear}, relacionando $\Delta m$ a $ \dfrac{1}{t^2} $ .
 
 \begin{table}[!htbp]
 \centering
@@ -140,9 +140,9 @@ $13.6 \pm 0.3$ & $7.26 \pm 0.03 $ & $ 0.0189 \pm 0.0003 $ \\
 \end{tabular} 
 \label{linear}
 \end{table}
-Fazendo a regressão linear de $ \Delta m$ X $ \dfrac{1}{t^2} $, pelo método de mínimos quadrados, obtem-se os seguintes coeficientes: 
+Fazendo a regressão linear de $ \Delta m$ X $ \dfrac{1}{t^2} $, pelo método de mínimos quadrados, obtém-se os seguintes coeficientes: 
 	$$ a = 602 \pm 2 \; (gs^2)$$
-	$$ b = 1.77 \pm 0.08 \; (g) $$
+	$$ b = 1.77 \pm 0.08 \; (g).$$
 
 A reta resultante da regressão linear, sobreposta aos pontos medidos experimentalmente pode ser vista na Figura \ref{grafico}. Nota-se que o experimento falhou em coletar dados distribuidos uniformemente sobre o eixo $ \Delta m$, e isso pode acarretar erros e incertezas.
 
@@ -166,7 +166,7 @@ $$ \Delta I = \sqrt{(R^2 \cdot \Delta M_{polia})^2 + (2M_{polia}R \cdot \Delta R
 substituindo os valores medidos, obtemos:
 $$ I = 0.00260 \pm 0.000003 \; Kg \cdot m^2 $$
 
-As faixas de erro não se sobrepõe, mas isso pode ser explicado por uma série de coisas. Pode-se observar no gráfico que os valores medidos estão muito mal distribuídos pela faixa de $ \Delta m $. O erro das medidas de tempo também foram possívelmente subestimadas, uma vez que dependem fortemente do fator humano. 
+As faixas de erro não se sobrepõem, mas isso pode ser explicado por uma série de fatores. Pode-se observar no gráfico que os valores medidos estão muito mal distribuídos pela faixa de $ \Delta m $. O erro das medidas de tempo também foram possívelmente subestimadas, uma vez que dependem fortemente do fator humano. 
 
 \subsection{Torque da força de atrito}
 Da equação linearizada original, vemos que o coeficiente linear é 
@@ -178,7 +178,7 @@ Assim, podemos calcular o valor de $\tau_a$ como
 $$ \tau_a =  0.00104 \pm 0.00004 \; N \cdot m $$
 
 \section{Conclusões}
-O experimento permitiu calcular calcular o momento de inércia e o torque da força de atrito com precisão razoável, apesar de não estar de acordo com a teoria. Explicações possíveis para essa divergência que foram apontadas são a má distribuição dos pontos experimentais e a subestimação do erro humano na medição do tempo. Os valores encontrados foram $  I = 0.00267 \pm 0.00004 \; Kg \cdot m^2 $ e $  \tau_a =  0.00104 \pm 0.00004 \; N \cdot m $.
+O experimento permitiu calcular calcular o momento de inércia e o torque da força de atrito com precisão razoável, apesar de não estar de acordo com a teoria. Explicações possíveis para essa divergência podem ser apontadas como a má distribuição dos pontos experimentais e a subestimação do erro humano na medição do tempo. Os valores encontrados foram \\$  I = 0.00267 \pm 0.00004 \; Kg \cdot m^2 $ e $  \tau_a =  0.00104 \pm 0.00004 \; N \cdot m $.
 
 
 
