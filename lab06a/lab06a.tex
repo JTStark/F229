@@ -109,18 +109,50 @@ Tensão $(mV)$ & Temperatura $(C)$\\
 \label{dados}
 \end{table}
 
+\begin{table}[!htbp]
+
+\centering
+\def\arraystretch{1.5}
+\caption{Dados obtidos no experimento}
+
+\begin{tabular}{|r|r|}
+\hline
+Tempo $(s)$ & temperatura $(C)$ \\
+\hline
+    0 & 89 \\    
+  700 & 78 \\
+  860 & 76 \\
+ 1500 & 71 \\
+ 1610 & 70 \\
+\hline
+\end{tabular}
+
+\emph{O erro na temperatura é de $0.5 C$, e no tempo de $0.5 s$}
+\label{dados}
+\end{table}
+
 
 \section{Análise dos Resultados e Discussões}
 
 \subsection{Curva de Calibração do Termopar}
-Para comparar os dados obtidos no experimento e os dados conhecidos de tensão em função da temperatura, foi construído o gráfico na Figura \ref{termopar}.
+Para comparar os dados obtidos no experimento e os dados conhecidos de tensão em função da temperatura, foi construído o gráfico na Figura \ref{termopar}.  \\
+Verifica-se que houve algum tipo de erro experimental na realização, uma vez que os resultados obtidos são internamente consistentes (A relação é linear, assim como esperado), mas uma diferença significativa das medidas esperadas.
 
+% INSERT migués HERE 
+
+ 
 \begin{figure}[!htbp]
 \includegraphics[scale=0.55]{termopar.png}
 \caption{Curva de calibração do termopar. As medidas Azuis são as obtidas experimentalmente e as vermelhas são as esperadas}
 \label{termopar}
 \end{figure}
 
+\subsection{Constante de tempo do calorímetro}
+A queda de temperatura da agua no calorímetro pode ser descrita pela equação
+$$ T = T_0 e^{-t/\tau} + T_a $$
+que pode ser reescrita como
+$$ \ln \Delta T = -t/\tau + \ln T_0 $$
+Vemos então que deve haver uma relação linear entre $ln \Delta T$ e $ t $. Para verificar essa relação foi construido a tabela \ref{table:tempo} e o gráfico da figura \ref{fig:tempo}. 
 
 
 \section{Conclusões}
