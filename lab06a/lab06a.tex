@@ -152,7 +152,39 @@ A queda de temperatura da agua no calorímetro pode ser descrita pela equação
 $$ T = T_0 e^{-t/\tau} + T_a $$
 que pode ser reescrita como
 $$ \ln \Delta T = -t/\tau + \ln T_0 $$
-Vemos então que deve haver uma relação linear entre $ln \Delta T$ e $ t $. Para verificar essa relação foi construido a tabela \ref{table:tempo} e o gráfico da figura \ref{fig:tempo}. 
+Vemos então que deve haver uma relação linear entre $ln \Delta T$ e $ t $. Para verificar essa relação foi construido a tabela \ref{table:tempo} e o gráfico da figura \ref{fig:tempo}. \\
+\begin{table}[!htbp]
+\centering
+\def\arraystretch{1.5}
+\caption{Dados relacionando $ln \Delta T$ à $t$}
+\label{table:tempo}
+\begin{tabular}{|c|l|r|r|}
+\hline
+Temperatura $\; (C)$ & $\Delta T \; (C)$ & $\ln \Delta T \; (\ln C)$ & tempo $\; (s)$ \\
+\hline
+ $89 \pm 0.5$ & $ 62.5 \pm  0.7 $ & $ 4.135 \pm 0.008 $    &    0 \\
+ \hline
+ $78 \pm 0.5$ & $ 51.5 \pm  0.7 $ & $ 3.941 \pm 0.009 $ &  700 \\
+ \hline
+ $76 \pm 0.5 $& $ 49.5 \pm  0.7 $ & $ 3.90 \pm 0.01 $ &  860 \\
+ \hline
+ $71 \pm 0.5$ & $ 44.5 \pm  0.7 $ & $ 3.79 \pm 0.01 $ & 1500 \\
+ \hline
+ $70 \pm 0.5$& $ 43.5 \pm  0.7 $ & $ 3.77 \pm 0.01 $ & 1610 \\
+\hline
+\end{tabular}\\
+\emph{$\Delta T$ for calculado a partir de uma temperatura ambiente de $26.5 C$}
+
+\end{table}
+Fazendo a regressão linear sobre os dados da tabela \ref{table:tempo}, obtemos os coeficientes 
+$$ a = -0.000232 \pm 0.000007 $$
+$$ b = 4.125 \pm 0.007 $$
+
+\begin{figure}[!htbp]
+\includegraphics[scale=0.55]{tempo.png}
+\caption{Gŕafico de regressão linear de $ \ln \Delta T$ por $t$.}
+\label{fig:tempo}
+\end{figure}
 
 
 \section{Conclusões}
