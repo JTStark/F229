@@ -72,7 +72,6 @@ $$-m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O}\cdot
 $$C_{cal} = \frac{m_{H_2O}\cdot c_{H_2O}\cdot(\theta_{quente} + \theta_{frio} -2\theta_{final})}{(\theta_{final}-\theta_{frio})}$$
 
 
-
 \subsection{Dados Obtidos}
 
 A Tabela \ref{dados} apresenta as medições Da tensão medida no termopar, em função da temperatura.
@@ -190,8 +189,7 @@ Temperatura $\; (C)$ & $\Delta T \; (C)$ & $\ln \Delta T \; (\ln C)$ & tempo $\;
 
 \end{table}
 Fazendo a regressão linear sobre os dados da tabela \ref{table:tempo}, obtemos os coeficientes 
-$$ a = -0.000232 \pm 0.000007 $$
-$$ b = 4.125 \pm 0.007 $$
+$$ a = -0.000232 \pm 0.000007\qquad e\qquad b = 4.125 \pm 0.007 $$
 
 \begin{figure}[!htbp]
 \includegraphics[scale=0.55]{tempo.png}
@@ -199,6 +197,11 @@ $$ b = 4.125 \pm 0.007 $$
 \label{fig:tempo}
 \end{figure}
 
+Sabemos então que, pela relação $ \ln \Delta T = -t/\tau + \ln T_0 $, $a = -\frac{1}{\tau}$ e, portanto:
+$$ \tau = -\frac{1}{a}; $$
+$$ \Delta\tau =\frac{\Delta a}{a^2}. $$
+Assim, 
+$$ \tau = (4300 \pm 100)s $$
 
 \section{Conclusões}
 
