@@ -63,12 +63,22 @@ Por fim, plota-se um gráfico $V \; x \; T$ com os pares anotados, e um com os t
 Como o calorimetro usado não é ideal, nesta parte do experimento, será calculada a sua constante de tempo, que representa a velocidade com que o calorímetro permite trocas de calor com o ambiente.\\
 Para tal, prenche-se o calorimetro com água, que deve ser aquecida utilizando-se um ebulidor, e, com ele totalmente fechado (figura \ref{calorimetro}), mas com um termômetro dentro, cronometra-se o tempo com que a temperatura cai. No caso, foi medido o tempo de $T = 89 \; ^{\circ} C$ a $T = 69 \; ^{\circ} C$.\\
 Então, pela fórmula 
+
 $$T = T_0 e ^{-t/\tau} + T_a$$
-onde $T_0$ é a temperatura inicial, $t$ é o tempo, $\tau$ é a constante a ser encontrada e $T_a$ é a temperatura ambiente (de $26.5 ^{\circ}$, no caso), calcula-se o valor da constante através de um gráfico $ln(T) \; x \; t$.
+
+onde $T_0$ é a temperatura inicial, $t$ é o tempo, $\tau$ é a constante a ser encontrada e $T_a$ é a temperatura ambiente (de $26.5 ^{\circ}$, no caso), calcula-se o valor da constante através de um gráfico $ln(T - T_a) \; x \; t$, cuja curva segue a relação semi-logarítmica:
+
+$$T - T_a = T_0 e^{-t/\tau}$$
+$$ln(T - T_a) = ln(T_0) - \frac{t}{\tau} ln e$$
+$$ln(T - T_a) = - \frac{1}{\tau} \cdot t + ln(T_0)$$
+
 \subsubsection{Capacidade térmica de um calorímetro}
-Para determinar a capacidade térmica do calorímetro, metade do calorímetro foi enchido de água a temperura ambiente conhecida. Depois, acrescentou-se a mesma quantidade de água quente a $100$ graus celsius, esperando o sistema entrar em equilibrio e vendo sua temperatura final. Assim, a partir da relação:
+
+Para determinar a capacidade térmica do calorímetro (figura \ref{calorimetro}), ele teve, aproximadamente, um terço de seu volume preenchido por água à temperatura de $\theta_{frio} = 18 \; ^{\circ}C$. Depois, acrescentou-se a mesma quantidade de água quente a $\theta_{quente} = 82 \; ^{\circ}C$, esperando o sistema entrar em equilibrio e vendo sua temperatura final. Assim, a partir da relação:
+
+$$\Sigma Q = 0$$
 $$-Q_{perdido H_2O} = Q_{recebido H_2O} + Q_{recebido Calorimetro}$$
-$$-m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
+$$-m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$ \
 $$C_{cal} = \frac{m_{H_2O}\cdot c_{H_2O}\cdot(\theta_{quente} + \theta_{frio} -2\theta_{final})}{(\theta_{final}-\theta_{frio})}$$
 
 
