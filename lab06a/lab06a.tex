@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-%\usepackage[brazilian]{babel} % Brazil or not Brazil??
+\usepackage[brazilian]{babel} % Brazil or not Brazil??
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -75,13 +75,15 @@ Determina-se a capacidade térmica desejada.
 
 \subsection{Dados Obtidos}
 
-A Tabela \ref{dados} apresenta as medições Da tensão medida no termopar, em função da temperatura.
+A Tabela \ref{dadostermopar} apresenta as medições Da tensão medida no termopar, em função da temperatura. Enquanto na Tabela \ref{dadostempo} estão presentes os
+dados da tendência de queda de temperatura do calorímetro utilizado.
 
+\newpage
 \begin{table}[!htbp]
 
 \centering
 \def\arraystretch{1.5}
-\caption{Dados obtidos no experimento}
+\caption{Medições de temperatura relacionadas a tensão medida em um termopar}
 
 \begin{tabular}{|r|r|}
 \hline
@@ -118,14 +120,14 @@ Tensão $(mV)$ & Temperatura $(C)$\\
 \end{tabular}
 
 \emph{O erro na temperatura é de $0.5 C$, e na tensão de $0.01 mV$}
-\label{dados}
+\label{dadostermopar}
 \end{table}
 
 \begin{table}[!htbp]
 
 \centering
 \def\arraystretch{1.5}
-\caption{Dados obtidos no experimento}
+\caption{Medidas de temperatura de um calorímetro}
 
 \begin{tabular}{|r|r|}
 \hline
@@ -140,7 +142,7 @@ Tempo $(s)$ & temperatura $(C)$ \\
 \end{tabular}
 
 \emph{O erro na temperatura é de $0.5 C$, e no tempo de $0.5 s$}
-\label{dados}
+\label{dadostempo}
 \end{table}
 
 
