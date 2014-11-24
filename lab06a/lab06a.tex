@@ -36,9 +36,6 @@ Este experimento pode ser divido em três partes, cada uma com seus objetivos, q
 \section{Procedimento Experimental e Coleta de Dados}
 
 
-\subsection{Procedimento}
-
-
 \subsubsection{Curva de calibração de um termopar}
 
   Nesta parte do experimento preenche-se uma parte do copo do calorímetro (vide figura \ref{calorimetro}) com água fervente e coloca-se nele um termômetro de mercúrio para controle de sua temperatura. Em um béquer separado, coloca-se água com gelo para manter sua temperatura próxima a zero.\\
@@ -74,6 +71,7 @@ onde $T_0$ é a temperatura inicial, $t$ é o tempo, $\tau$ é a constante a ser
 Para determinar a capacidade térmica do calorímetro, metade do calorímetro foi enchida de água a temperura fria. Depois, acrescentou-se a mesma quantidade de água quente, esperando o sistema entrar em equilibrio e vendo sua temperatura final. Assim, a partir da relação:
 $$-Q_{perdido H_2O} = Q_{recebido H_2O} + Q_{recebido Calorimetro}$$
 $$-m_{H_2O_{quente}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O_{fria}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
+
 $$C_{cal} = \frac{m_{H_2O_{quente}}\cdot c_{H_2O}\cdot(\theta_{quente} - \theta_{final}) + m_{H_2O_{fria}}\cdot c_{H_2O}\cdot(\theta_{frio} - \theta_{final})}{(\theta_{final}-\theta_{frio})},$$
 Determina-se a capacidade térmica desejada.
 
@@ -160,8 +158,10 @@ Tempo $(s)$ & temperatura $(C)$ \\
 \hline
 &Massa $(g)$ & Temperatura Inicial $(C)$ & Temperatura Final $(C)$  \\
 \hline
-  Água fria & $137.3 \pm 0.1 $ & $35.0 \pm 0.5$ & $41.0 \pm 0.5$  \\    
-  Água quente & $133.3 \pm 0.1$ & $49.1 \pm 0.1$ & $41.0 \pm 0.5$ \\
+  Água fria & $137.3 \pm 0.1 $ & $35.0 \pm 0.5$ & $41.0 \pm 0.5$  \\
+  \hline    
+  Água quente & $133.3 \pm 0.1$ & $49.1 \pm 0.5$ & $41.0 \pm 0.5$ \\
+  \hline
   Calorímetro &  & $35.0 \pm 0.1$ & $41.0 \pm 0.5$ \\
  
 \hline
@@ -233,12 +233,28 @@ Assim,
 $$ \tau = (4300 \pm 100)s $$
 \subsection{Capacidade termica do calorímetro}
 
-A partir da fórmula $$C_{cal} = \frac{m_{H_2O_{quente}}\cdot c_{H_2O}\cdot(\theta_{quente} - \theta_{final}) + m_{H_2O_{fria}}\cdot c_{H_2O}\cdot(\theta_{frio} - \theta_{final})}{(\theta_{final}-\theta_{frio})},$$
+A partir da fórmula
+$$-Q_{perdido H_2O} = Q_{recebido H_2O} + Q_{recebido Calorimetro}$$
+$$-m_{H_2O_{quente}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O_{fria}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
+$$C_{cal} = \frac{m_{H_2O_{quente}}\cdot c_{H_2O}\cdot(\theta_{quente} - \theta_{final}) + m_{H_2O_{fria}}\cdot c_{H_2O}\cdot(\theta_{frio} - \theta_{final})}{(\theta_{final}-\theta_{frio})},$$
 sabemos calcular a capacidade térmica do caloímetro.
 A massa de água quente é de $(133,3 \pm 0,1)g$ com temperatura $(49,0 \pm 0,5)^{\circ}\mathrm{C}$, e a massa de água fria é $(137,3 \pm 0,1)g$, com temperatura $(35,0 \pm 0,5)^{\circ}\mathrm{C}$.
 
 Sabendo que a temperatura de equilíbrio é $(41,0 \pm 0,5)^{\circ}\mathrm{C}$, tem-se que:
-$$C_{cal} = 40,43 \,^{\circ}\mathrm{C}^{-1}. $$
+$$C_{cal} = 40,43 \;cal ^{\circ}\mathrm{C}^{-1}. $$
+
+
+O erro $ \Delta C_{cal} $ é dado por 
+% VEM MONSTRO!!
+\begin{multline*}
+\Delta C_{cal}^2 =  \frac{M_{{quente}}^{2} \Delta{\theta_{{frio}}}^{2} \left(\theta_{{final}} - \theta_{{quente}}\right)^{2}}{\left(\theta_{{final}} - \theta_{{frio}}\right)^{4}} + \frac{M_{{quente}}^{2} \Delta{\theta_{{quente}}}^{2}}{\left(\theta_{{final}} - \theta_{{frio}}\right)^{2}} + \Delta{M_{{frio}}}^{2} +\\ \frac{\Delta{M_{{quente}}}^{2} \left(\theta_{{final}} - \theta_{{quente}}\right)^{2}}{\left(\theta_{{final}} - \theta_{{frio}}\right)^{2}} + \frac{\Delta{\theta_{{final}}}^{2}}{\left(\theta_{{final}} - \theta_{{frio}}\right)^{4}} \left( M_{{quente}}( \theta_{{quente}} - \theta_{{frio}})\right)^{2}
+\end{multline*}
+Assumindo $c_{H_20} = 1 \;cal/g^{\circ}\mathrm{C}$ \\
+Podemos calcular numericamente o erro como:
+$$ \Delta C_{cal} = 32 \; cal ^{\circ}\mathrm{C}^{-1}$$
+
+O valor final pode ser escrito como 
+$$C_{cal} = 40 \pm 32 \;cal ^{\circ}\mathrm{C}^{-1}. $$
 
 \section{Conclusões}
 O experimento obteve sucesso em descrever a curva de calibração de um termopar com razoável precisão. Houve uma discrepância com os dados esperados que pode ser explicada pela diferença na temperatura de referência.\\
