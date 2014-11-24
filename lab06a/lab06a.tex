@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage[brazilian]{babel} % Brazil or not Brazil??
+%\usepackage[brazilian]{babel} % Brazil or not Brazil??
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -71,7 +71,7 @@ onde $T_0$ é a temperatura inicial, $t$ é o tempo, $\tau$ é a constante a ser
 
 
 \subsubsection{Capacidade térmica de um calorímetro}
-Para determinar a capacidade térmica do calorímetro, metade do calorímetro foi enchida de água a temperura $18$ graus celsius. Depois, acrescentou-se a mesma quantidade de água quente a $82$ graus celsius, esperando o sistema entrar em equilibrio e vendo sua temperatura final $61$ graus celsius. Assim, a partir da relação:
+Para determinar a capacidade térmica do calorímetro, metade do calorímetro foi enchida de água a temperura fria. Depois, acrescentou-se a mesma quantidade de água quente, esperando o sistema entrar em equilibrio e vendo sua temperatura final. Assim, a partir da relação:
 $$-Q_{perdido H_2O} = Q_{recebido H_2O} + Q_{recebido Calorimetro}$$
 $$-m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
 $$C_{cal} = \frac{m_{H_2O}\cdot c_{H_2O}\cdot(\theta_{quente} + \theta_{frio} -2\theta_{final})}{(\theta_{final}-\theta_{frio})},$$
@@ -148,6 +148,27 @@ Tempo $(s)$ & temperatura $(C)$ \\
 
 \emph{O erro na temperatura é de $0.5 C$, e no tempo de $0.5 s$}
 \label{dadostempo}
+\end{table}
+
+\begin{table}[!htbp]
+
+\centering
+\def\arraystretch{1.5}
+\caption{Dados Capacidade térmica do calorímetro}
+
+\begin{tabular}{|r|r|r|r|}
+\hline
+&Massa $(g)$ & Temperatura Inicial $(C)$ & Temperatura Final $(C)$  \\
+\hline
+  Água fria & $137.3 \pm 0.1 $ & $35.0 \pm 0.5$ & $41.0 \pm 0.5$  \\    
+  Água quente & $133.3 \pm 0.1$ & $49.1 \pm 0.1$ & $41.0 \pm 0.5$ \\
+  Calorímetro &  & $35.0 \pm 0.1$ & $41.0 \pm 0.5$ \\
+ 
+\hline
+\end{tabular}
+
+
+\label{dadoscalorimetro}
 \end{table}
 
 
