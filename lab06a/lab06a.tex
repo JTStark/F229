@@ -41,7 +41,7 @@ Este experimento pode ser divido em três partes, cada uma com seus objetivos, q
 
 \subsubsection{Curva de calibração de um termopar}
 
-Nesta parte do experimento preenche-se uma parte do copo do calorímetro (vide figura \ref{calorimetro}) com água fervente e coloca-se nele um termômetro de mercúrio para controle de sua temperatura. Em um béquer separado, coloca-se água com gelo para manter sua temperatura próxima a zero.\\
+  Nesta parte do experimento preenche-se uma parte do copo do calorímetro (vide figura \ref{calorimetro}) com água fervente e coloca-se nele um termômetro de mercúrio para controle de sua temperatura. Em um béquer separado, coloca-se água com gelo para manter sua temperatura próxima a zero.\\
 
 \begin{figure}[!htbp]
 \centering
@@ -73,8 +73,8 @@ onde $T_0$ é a temperatura inicial, $t$ é o tempo, $\tau$ é a constante a ser
 \subsubsection{Capacidade térmica de um calorímetro}
 Para determinar a capacidade térmica do calorímetro, metade do calorímetro foi enchida de água a temperura fria. Depois, acrescentou-se a mesma quantidade de água quente, esperando o sistema entrar em equilibrio e vendo sua temperatura final. Assim, a partir da relação:
 $$-Q_{perdido H_2O} = Q_{recebido H_2O} + Q_{recebido Calorimetro}$$
-$$-m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
-$$C_{cal} = \frac{m_{H_2O}\cdot c_{H_2O}\cdot(\theta_{quente} + \theta_{frio} -2\theta_{final})}{(\theta_{final}-\theta_{frio})},$$
+$$-m_{H_2O_{quente}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{quente}) = m_{H_2O_{fria}}\cdot c_{H_2O} \cdot (\theta_{final}-\theta_{frio}) + C_{cal}\cdot (\theta_{final}-\theta_{frio}) $$
+$$C_{cal} = \frac{m_{H_2O_{quente}}\cdot c_{H_2O}\cdot(\theta_{quente} - \theta_{final}) + m_{H_2O_{fria}}\cdot c_{H_2O}\cdot(\theta_{frio} - \theta_{final})}{(\theta_{final}-\theta_{frio})},$$
 Determina-se a capacidade térmica desejada.
 
 
@@ -231,13 +231,14 @@ $$ \tau = -\frac{1}{a}; $$
 $$ \Delta\tau =\frac{\Delta a}{a^2}. $$
 Assim, 
 $$ \tau = (4300 \pm 100)s $$
-%\subsection{Capacidade termica do calorímetro}
-%
-%A partir da fórmula $$C_{cal} = \frac{m_{H_2O}\cdot c_{H_2O}\cdot(\theta_{quente} + \theta_{frio} -2\theta_{final})}{(\theta_{final}-\theta_{frio})},$$
-%sabemos calcular a capacidade térmica do caloímetro.
-%Para determinar a massa de água quente e fria, na ausência de uma balança acessível, foram utilizados o volume da parte interna do calorímetro ($V = 88cm^3 \pm 1cm^3$) e a densidade conhecida da água, ($d_{H_2O} = 1,0g/cm^3 \pm 0,1 g/cm^3$). Com isso, e sabendo que encheu-se o mesmo volume de água quente e fria preenchendo todo o volume interno, tem-se que a massa de água quente e fria ocuparam metade do volume cada uma. Isso, corresponde a $ m_{H_2O} = (44 \pm 1)g$.
-%A partir disso, tem-se que
-%$$C_{cal} = -22 \,^{\circ}\mathrm{C}^{-1} $$
+\subsection{Capacidade termica do calorímetro}
+
+A partir da fórmula $$C_{cal} = \frac{m_{H_2O_{quente}}\cdot c_{H_2O}\cdot(\theta_{quente} - \theta_{final}) + m_{H_2O_{fria}}\cdot c_{H_2O}\cdot(\theta_{frio} - \theta_{final})}{(\theta_{final}-\theta_{frio})},$$
+sabemos calcular a capacidade térmica do caloímetro.
+A massa de água quente é de $(133,3 \pm 0,1)g$ com temperatura $(49,0 \pm 0,5)^{\circ}\mathrm{C}$, e a massa de água fria é $(137,3 \pm 0,1)g$, com temperatura $(35,0 \pm 0,5)^{\circ}\mathrm{C}$.
+
+Sabendo que a temperatura de equilíbrio é $(41,0 \pm 0,5)^{\circ}\mathrm{C}$, tem-se que:
+$$C_{cal} = 40,43 \,^{\circ}\mathrm{C}^{-1}. $$
 
 \section{Conclusões}
 O experimento obteve sucesso em descrever a curva de calibração de um termopar com razoável precisão. Houve uma discrepância com os dados esperados que pode ser explicada pela diferença na temperatura de referência.\\
