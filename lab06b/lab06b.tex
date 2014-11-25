@@ -77,7 +77,7 @@ $$ + \; C_{calorimetro} \; (\theta_{agua} - \theta_{equilibrio}))$$
 
 
 \subsection{Dados Obtidos}
-
+\subsubsection{Calor específico de Metais}
 %ficou feio esse primeiro paragrafo não-identado... Se quiser mudar tem uma \usepackage{indentfirst} que é sucesso.
 Para o chumbo, obtivemos os seguintes valores:
 $$ \theta_{quente} = (75,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad \theta_{frio} = (22,0 \pm 0,5)\,^{\circ}\mathrm{C}, $$
@@ -95,7 +95,14 @@ $$ m_{metal} = (91,6 \pm 0,1)g, \qquad \theta_{equilibrio} = (27,5 \pm 0,5)\,^{\
 
 A Massa de água à temperatura ambiente utilizada em cada um dos experimentos é $185.7 \pm 0.1 \; g$.
 
-
+\subsubsection{Calor latente de fusão gelo}
+As massas medidas são:
+$$ m_{gelo} = (131,6 \pm 0,1) g $$
+$$ m_{agua} = (214,7 \pm 0,1)g $$
+E as temperaturas:
+$$ \theta_{fusao} = (3,0 \pm 0,5)^{\circ}\mathrm{C} $$
+$$ \theta_{agua} = (31,0 \pm 0,5)^{\circ}\mathrm{C} $$
+$$ \theta_{equilibrio} = (16,5 \pm 0,5)^{\circ}\mathrm{C} $$
 \section{Análise dos Resultados e Discussões}
 
 \subsection{Determinação do Calor Específico de Metais}
@@ -108,35 +115,42 @@ $$ c_{aluminio} = 0.22949 $$
 $$ c_{cobre} = 0.062379 $$
 
 Propagando o erro, obtemos a formula 
-\includegraphics[scale=1]{formula.png}
 
+\includegraphics[scale=0.45]{formula.png}
+
+Substituindo os valores, obtemos:
 $$ \Delta c_{chumbo} = 0.03 $$
 $$ \Delta c_{aluminio} = 0.09 $$
 $$ \Delta c_{cobre} = 0.05 $$
 
-Então os valores finais podem ser escritos como 
-$$ c_{chumbo} = 0.04 \pm 0.03 \; cal/gC$$
-$$ c_{aluminio} = 0.23 \pm 0.09 \; cal/gC$$
-$$ c_{cobre} = 0.06 \pm 0.05 \; cal/gC$$
+Então os valores finais podem ser escritos como:
+$$ c_{chumbo} = 0.04 \pm 0.03 \; \dfrac{cal}{g^{\circ}\mathrm{C}}$$
+$$ c_{aluminio} = 0.23 \pm 0.09 \; \dfrac{cal}{g^{\circ}\mathrm{C}}$$
+$$ c_{cobre} = 0.06 \pm 0.05 \; \dfrac{cal}{g^{\circ}\mathrm{C}}$$
 
-% Claramente faltam os erros. Quando os erros estiverem live, arrumem os algarismos significativos. Beijos :*
-
-$$ c_{chumbo} = 0,0424208145 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
-$$ c_{aluminio} = 0,2287805994 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
-$$ c_{cobre} = 0,0621856172 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
 
 \subsection{Determinação do Calor Latente de Fusão do Gelo}
+Substituindo os valores na equação 
 
-Para as massas:
-$$ m_{gelo} = (131,6 \pm 0,1) g $$
-$$ m_{agua} = (214,7 \pm 0,1)g $$
-E temperaturas:
-$$ \theta_{fusao} = (3,0 \pm 0,5)^{\circ}\mathrm{C} $$
-$$ \theta_{agua} = (31,0 \pm 0,5)^{\circ}\mathrm{C} $$
-$$ \theta_{equilibrio} = (16,5 \pm 0,5)^{\circ}\mathrm{C} $$
+$$L_{fusao\;do\;gelo} = \frac{1}{m_{gelo}} \cdot (m_{gelo} \; c_{agua} \; (\theta_{fusao} - \theta_{equilibrio}) \; + \; m_{agua} \; c_{agua} \; (\theta_{agua} - \theta_{equilibrio}) \;$$ 
+$$ + \; C_{calorimetro} \; (\theta_{agua} - \theta_{equilibrio}))$$
+
 Podemos obter o valor o calor latente de fusão do gelo:
 %FUDEU
-$$ L_{fusao\;do\;gelo} = 5,4072948328 \dfrac{cal}{g}$$
+$$ L_{fusao\;do\;gelo} = 14.56344 \dfrac{cal}{g}$$
+
+O erro é propagado e obtido pela formula: 
+
+\includegraphics[scale=0.45]{formula2.png}
+
+Substituindo os valores,obtemos:
+
+$$ \Delta L_{fusao\;do\;gelo} = 3.971 \dfrac{cal}{g}$$
+
+Então o valor final pode ser escrito como
+
+$$ L_{fusao\;do\;gelo} = 15 \pm 4 \dfrac{cal}{g}$$
+
 
 \section{Conclusões}
 
