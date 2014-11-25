@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+
 \usepackage[margin=0.8in]{geometry}
 
 
@@ -73,10 +74,8 @@ $$m_{gelo} \; L_{fusao\;do\;gelo} \; + \; m_{gelo} \; c_{agua} \; (\theta_{equil
 $$L_{fusao\;do\;gelo} = \frac{1}{m_{gelo}} \cdot (m_{gelo} \; c_{agua} \; (\theta_{fusao} - \theta_{equilibrio}) \; + \; m_{agua} \; c_{agua} \; (\theta_{agua} - \theta_{equilibrio}) \;$$ 
 $$ + \; C_{calorimetro} \; (\theta_{agua} - \theta_{equilibrio}))$$
 
-\section{Análise dos Resultados e Discussões}
 
-
-\subsection{Determinação do Calor Específico de Metais}
+\subsection{Dados Obtidos}
 
 %ficou feio esse primeiro paragrafo não-identado... Se quiser mudar tem uma \usepackage{indentfirst} que é sucesso.
 Para o chumbo, obtivemos os seguintes valores:
@@ -93,7 +92,31 @@ $$ m_{Metal} = (42,3 \pm 0,1)g, \qquad T_{equilibrio} = (26,0 \pm 0,5)\,^{\circ}
 $$ T_{quente} = (67,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad T_{frio} = (26,5 \pm 0,5)\,^{\circ}\mathrm{C}, $$
 $$ m_{Metal} = (91,6 \pm 0,1)g, \qquad T_{equilibrio} = (27,5 \pm 0,5)\,^{\circ}\mathrm{C}. $$
 
-Sabendo que a massa de água fria utilizada foi de $(185 \pm 0,5)g$, tem-se que os calores específicos dos metais são:
+A Massa de água à temperatura ambiente utilizada em cada um dos experimentos é $185.7 \pm 0.1 \; g$.
+
+
+\section{Análise dos Resultados e Discussões}
+
+\subsection{Determinação do Calor Específico de Metais}
+Da formula 
+$$c_{metal} = \frac{m_{H_2O} \; c_{H_20} \;  (\theta_{final} - \theta_{frio}) + C_{calorimetro} \; (\theta_{final} - \theta_{frio})}{m_{metal} \;(\theta_{quente} - \theta_{final})}$$\
+
+Obtemos 
+$$ c_{chumbo} = 0.042552 $$
+$$ c_{aluminio} = 0.22949 $$
+$$ c_{cobre} = 0.062379 $$
+
+Propagando o erro, obtemos a formula 
+\includegraphics[scale=1]{formula.png}
+
+$$ \Delta c_{chumbo} = 0.03 $$
+$$ \Delta c_{aluminio} = 0.09 $$
+$$ \Delta c_{cobre} = 0.05 $$
+
+Então os valores finais podem ser escritos como 
+$$ c_{chumbo} = 0.04 \pm 0.03 \; cal/gC$$
+$$ c_{aluminio} = 0.23 \pm 0.09 \; cal/gC$$
+$$ c_{cobre} = 0.06 \pm 0.05 \; cal/gC$$
 
 \subsection{Determinação do Calor Latente de Fusão do Gelo}
 
