@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+
 %\usepackage[brazilian]{babel} % Brazil or not Brazil??
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -38,7 +39,7 @@ Este experimento pode ser divido em duas partes, cada uma com seus objetivos, qu
 
 \subsubsection{Determinação do Calor Específico de Metais}
 
-Esta parte do experimento foi feita da seguinte maneira: com um ebulidor, aquece-se uma amostra de água, numa garrafa térmica, e imerge-se a amostra do metal, de massa obtida com uma balança($m_{metal}$), nessa água, mantendo-se o controle de sua temperatura com um termômetro de mercúrio ($\theta_{quente}$). Então, insere-se o metal aquecido no calorímetro com água fria (vide figura \ref{CalorMetais}), de temperatura ($\theta_{frio}$) e massa ($m_{H_2O}$) também conhecidos, e espera-se pelo equilíbrio térmico ($\theta_{final}$), para anotar seu valor.
+Esta parte do experimento foi feita da seguinte maneira: com um ebulidor, aquece-se uma amostra de água, numa garrafa térmica, e imerge-se a amostra do metal, de massa obtida com uma balança($m_{metal}$), nessa água, mantendo-se o controle de sua temperatura com um termômetro de mercúrio ($\theta_{quente}$). Então, insere-se o metal aquecido no calorímetro com água fria (vide figura \ref{CalorMetais}), de temperatura ($\theta_{frio}$) e massa ($m_{agua}$) também conhecidos, e espera-se pelo equilíbrio térmico ($\theta_{final}$), para anotar seu valor.
 
 \begin{figure}[!htbp]
 \centering
@@ -50,15 +51,15 @@ Esta parte do experimento foi feita da seguinte maneira: com um ebulidor, aquece
 Assim, calcula-se o calor específico do metal através da seguinte forma:
 
 $$\Sigma Q = 0$$\
-$$Q_{cedido\; pelo\; metal} + Q_{recebido\; por\; H_2O} + Q_{recebido\; pelo\; calorimetro} = 0$$\
-$$m_{metal} \; c_{metal} \; (\theta_{final} - \theta_{quente}) + m_{H_2O} \; c_{H_20} \;  (\theta_{final} - \theta_{frio}) + C_{calorimetro} \; (\theta_{final} - \theta_{frio}) = 0$$\
-$$c_{metal} = \frac{m_{H_2O} \; c_{H_20} \;  (\theta_{final} - \theta_{frio}) + C_{calorimetro} \; (\theta_{final} - \theta_{frio})}{m_{metal} \;(\theta_{quente} - \theta_{final})}$$\
+$$Q_{cedido\; pelo\; metal} + Q_{recebido\; pela\; agua} + Q_{recebido\; pelo\; calorimetro} = 0$$\
+$$m_{metal} \; c_{metal} \; (\theta_{equilibrio} - \theta_{quente}) + m_{agua} \; c_{agua} \;  (\theta_{equilibrio} - \theta_{frio}) + C_{calorimetro} \; (\theta_{equilibrio} - \theta_{frio}) = 0$$\
+$$c_{metal} = \frac{(m_{agua} \; c_{agua} \; + C_{calorimetro}) \; (\theta_{equilibrio} - \theta_{frio})}{m_{metal} \;(\theta_{quente} - \theta_{equilibrio})}$$\
 
 Então, repete-se o procedimento para as demais amostras.
 
 \subsubsection{Determinação do Calor Latente de Fusão do Gelo}
 
-Esta outra parte é feita de forma análoga. Insere-se uma massa $m_{gelo}$ (encontrado com a balança) de gelo, de temperatura conhecida ($\theta_{fusao}$), no calorímetro preenchido até a metade com água fria, de massa ($m_{agua}$) e temperatura ($\theta_{agua}$) conhcidos, até atingir-se o equilíbrio térmico ($\theta_{equilibrio}$), medindo-se seu valor com o termômetro, como mostrado na figura \ref{CalorGelo}.
+Esta outra parte é feita de forma análoga. Insere-se uma massa $m_{gelo}$ (encontrado com a balança) de gelo, de temperatura conhecida ($\theta_{fusao}$), no calorímetro preenchido até a metade com água fria, de massa ($m_{agua}$) e temperatura ($\theta_{agua}$) conhecidos, até atingir-se o equilíbrio térmico ($\theta_{equilibrio}$), medindo-se seu valor com o termômetro, como mostrado na figura \ref{CalorGelo}.
 
 \begin{figure}[!htbp]
 \centering
@@ -79,18 +80,18 @@ $$ + \; C_{calorimetro} \; (\theta_{agua} - \theta_{equilibrio}))$$
 
 %ficou feio esse primeiro paragrafo não-identado... Se quiser mudar tem uma \usepackage{indentfirst} que é sucesso.
 Para o chumbo, obtivemos os seguintes valores:
-$$ T_{quente} = (75,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad T_{frio} = (22,0 \pm 0,5)\,^{\circ}\mathrm{C}, $$
-$$ m_{Metal} = (102,0 \pm 0,5)g, \qquad T_{equilibrio} = (23,0 \pm 0,5)\,^{\circ}\mathrm{C}. $$
+$$ \theta_{quente} = (75,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad \theta_{frio} = (22,0 \pm 0,5)\,^{\circ}\mathrm{C}, $$
+$$ m_{metal} = (102,0 \pm 0,5)g, \qquad \theta_{equilibrio} = (23,0 \pm 0,5)\,^{\circ}\mathrm{C}. $$
 
 
 Para o alumínio, obtivemos os seguintes valores:
-$$ T_{quente} = (72,5 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad T_{frio} = (24,0 \pm 0,5)\,^{\circ}\mathrm{C}, $$
-$$ m_{Metal} = (42,3 \pm 0,1)g, \qquad T_{equilibrio} = (26,0 \pm 0,5)\,^{\circ}\mathrm{C}. $$
+$$ \theta_{quente} = (72,5 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad \theta_{frio} = (24,0 \pm 0,5)\,^{\circ}\mathrm{C}, $$
+$$ m_{metal} = (42,3 \pm 0,1)g, \qquad \theta_{equilibrio} = (26,0 \pm 0,5)\,^{\circ}\mathrm{C}. $$
 
 
  E finalmente, para o cobre, temos:
-$$ T_{quente} = (67,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad T_{frio} = (26,5 \pm 0,5)\,^{\circ}\mathrm{C}, $$
-$$ m_{Metal} = (91,6 \pm 0,1)g, \qquad T_{equilibrio} = (27,5 \pm 0,5)\,^{\circ}\mathrm{C}. $$
+$$ \theta_{quente} = (67,0 \pm 0,5)\,^{\circ}\mathrm{C}, \qquad \theta_{frio} = (26,5 \pm 0,5)\,^{\circ}\mathrm{C}, $$
+$$ m_{metal} = (91,6 \pm 0,1)g, \qquad \theta_{equilibrio} = (27,5 \pm 0,5)\,^{\circ}\mathrm{C}. $$
 
 A Massa de água à temperatura ambiente utilizada em cada um dos experimentos é $185.7 \pm 0.1 \; g$.
 
@@ -118,8 +119,24 @@ $$ c_{chumbo} = 0.04 \pm 0.03 \; cal/gC$$
 $$ c_{aluminio} = 0.23 \pm 0.09 \; cal/gC$$
 $$ c_{cobre} = 0.06 \pm 0.05 \; cal/gC$$
 
+% Claramente faltam os erros. Quando os erros estiverem live, arrumem os algarismos significativos. Beijos :*
+
+$$ c_{chumbo} = 0,0424208145 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
+$$ c_{aluminio} = 0,2287805994 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
+$$ c_{cobre} = 0,0621856172 \dfrac{cal}{g^{\circ}\mathrm{C}}$$
+
 \subsection{Determinação do Calor Latente de Fusão do Gelo}
 
+Para as massas:
+$$ m_{gelo} = (131,6 \pm 0,1) g $$
+$$ m_{agua} = (214,7 \pm 0,1)g $$
+E temperaturas:
+$$ \theta_{fusao} = (3,0 \pm 0,5)^{\circ}\mathrm{C} $$
+$$ \theta_{agua} = (31,0 \pm 0,5)^{\circ}\mathrm{C} $$
+$$ \theta_{equilibrio} = (16,5 \pm 0,5)^{\circ}\mathrm{C} $$
+Podemos obter o valor o calor latente de fusão do gelo:
+%FUDEU
+$$ L_{fusao\;do\;gelo} = 5,4072948328 \dfrac{cal}{g}$$
 
 \section{Conclusões}
 
